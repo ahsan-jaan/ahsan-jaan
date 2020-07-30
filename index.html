@@ -11,35 +11,60 @@
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <title>Ahsan</title>
   <script src="https://use.fontawesome.com/02e9a03270.js"></script>
- 
- <style>
-    .cover {
+  <link href="https://use.fontawesome.com/02e9a03270.css" media="all" rel="stylesheet">
+
+  <style>
+    /* .cover {
       background: linear-gradient(to bottom right, #440303, #058690d4);
-      height: 100vh;
+      height: 100%;
+    } */
+    .allcove {
+      background: linear-gradient(to bottom right, #440303, #058690d4);
+      height: 100%;
+      padding-bottom: 30px;
+
+    }
+    .bg-dark{
+      background:#d21c1c00!important; 
     }
 
     .name {
-      color: rgb(204, 204, 204);
-      width: 350px;
-      margin-top: -55px;
-      border-radius: 50px;
+      color: #6affdd;
     }
 
-    .name-text {
-      background-color: #343a40;
-    }
-
-    .picture img {
+    .pictur {
+      padding: 10px;
       margin-top: 5px;
-      box-shadow: -5px 0px 5px 3px rgba(0, 0, 0, 0.6);
+      box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.6);
+      border: 2px solid rgba(61, 63, 90, 0.733);
     }
 
-    #icons {}
+    .col-md-7 {
+      text-align: center;
+      color: #bfbfbf;
+    }
+    .row{
+      margin-right: 0px;
+      margin-left: 0px;
+      
+    }
+    .col-lg-4 a{
+      color: #bfbfbf;
+      text-decoration: none;
+    }
 
-    .social-media-icons {
-      background-color: rgb(48, 104, 136);
-      width: 350px;
-      border-radius: 5px;
+    .contect {
+      margin-top: 65px;
+      color: #bfbfbf;
+    }
+
+    .galerypart{
+      margin-top: 50px;
+     
+    }
+
+    .social-media-icons{
+       margin-top: 33px;
 
     }
 
@@ -52,17 +77,12 @@
     .social-media-icons a {
       margin-top: -20px;
       text-decoration: none;
-
       font-size: 2em;
-
-
-
     }
 
     .social-media-icons a:nth-child(1) i {
       color: #e2e2e2;
       margin-top: -20px;
-
     }
 
     .social-media-icons a:nth-child(2) i {
@@ -73,7 +93,6 @@
     .social-media-icons a:nth-child(3) i {
       color: #e2e2e2;
       margin-left: 12px;
-
     }
 
     .social-media-icons a:nth-child(4) i {
@@ -83,15 +102,14 @@
 
     .social-media-icons a i:hover {
       color: black;
-
     }
   </style>
 </head>
 
 <body>
-  <section class="cover">
+  <section class="cover allcove">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="index.html">Ahsan</a>
+      <a class="navbar-brand" href="#">Ahsan</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
         aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -99,28 +117,59 @@
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
           <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-          <a class="nav-item nav-link" href="about.html">About</a>
+          <a class="nav-item nav-link" href="#">About</a>
           <a class="nav-item nav-link" href="contect.html">Contect</a>
-
         </div>
       </div>
     </nav>
     <div class="picture">
-      <center>
-        <img src="img.jpg" width="360px" alt="..." class="img-thumbnail">
-        <div class="name">
-          <h1><span class="name-text">Hi, i'm Ahsan Jaan!</span></h1>
+      <div class="row featurette">
+
+        <div class="col-md-5 order-md-1">
+          <center>
+            <img class="featurette-image img-fluid mx-auto pictur" src="img.jpg" width="360px" alt="..."
+              class="img-thumbnail">
+          </center>
         </div>
-        <div class="social-media-icons col-xs-12" id="icons">
-          <ul class="list-inline col-xs-12">
-            <a href="https://web.facebook.com/profile.php?id=100009123961223"><i class="fa fa-facebook-f"></i></a>
-            <a href="https://mail.google.com/mail/u/0/#inbox"><i class="fa fa-envelope"></i></a>
-            <a href="https://www.instagram.com/ahsanjan4111/?hl=en"><i class="fa fa-instagram"></i></a>
-            <a href="https://twitter.com"><i class="fa fa-twitter-square"></i></a>
-          </ul>
+        <div class="col-md-7 order-md-2">
+          <h1>Hi, i'm <span class="name">Ahsan Jaan</span>!</h1><br>
+          <h5>"I am Proud to be a Pakistani"</h5>
+          <h5>"i am always ready to die for pakistan"</h5>
+
+        
+          <div class="row galerypart">
+            <div class="col-lg-4">
+              <a href="galery.html" ><img src="galrey.png" width="140px" alt="...">
+              <h2>Galrey</h2></a>
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+              <a href="contect.html" ><img src="contectme.png" width="140px" alt="...">
+             <h2>Contect Me</h2></a>
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+              <a href="about.html" ><img src="aboutme.png" width="140px" alt="...">
+             <h2>About ME</h2></a>
+            </div><!-- /.col-lg-4 -->
+          </div>
+          <div class="contect">
+            <i class="fa fa-envelope"> ahsanjanibrar@gmail.com &nbsp;</i>
+            <i class="fa fa-phone" id="phone"> +923012045234 </i>
+          </div>
+          <div class="social-media-icons">
+            <ul class="list-inline col-xs-12">
+              <a href="#"><i class="fa fa-facebook-f"></i></a>
+              <a href="#"><i class="fa fa-envelope"></i></a>
+              <a href="#"><i class="fa fa-instagram"></i></a>
+              <a href="#"><i class="fa fa-twitter-square"></i></a>
+            </ul>
+          </div>
         </div>
-      </center>
+      </div>
+      <div class="name">
+        <h1><span class="name-text"></span></h1>
+      </div>
     </div>
+   
   </section>
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -133,7 +182,5 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
     integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
     crossorigin="anonymous"></script>
-
 </body>
-
 </html>
